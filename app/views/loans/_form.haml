@@ -1,0 +1,18 @@
+= form_for @loan do |f|
+  - if @loan.errors.any?
+    #error_explanation
+      %h2
+        = pluralize(@loan.errors.count, "error")
+        prohibited this poll from being saved:
+      %ul
+        - @poll.errors.full_messages.each do |msg|
+          %li= msg
+  .field
+    %h4 What are you paying off this year?
+    = f.text_field :name
+    %h4 Amount you'll pay off in 2013
+    $ #{ f.text_field :goal_amount }
+  .actions
+    = f.submit "Start PayOff Year!", class: "success button"
+
+
