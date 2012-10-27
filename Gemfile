@@ -10,7 +10,6 @@ group :development, :test do
   gem 'quiet_assets', '1.0.1'
   gem 'simplecov', '0.7.1'
   gem 'capybara', '1.1.2'
-  gem 'fabrication', '2.4.0'
   gem 'launchy', '2.1.2'
   gem 'guard-rspec', '2.1.0'
   gem 'guard-spork', '1.2.1'
@@ -28,6 +27,9 @@ group :assets do
   gem 'sass-rails',   '3.2.5'
   gem 'coffee-rails', '3.2.2'
   gem 'uglifier', '1.3.0'
+
+  gem 'compass-rails'
+  gem 'zurb-foundation'
 end
 
 gem 'jquery-rails', '2.1.3'
